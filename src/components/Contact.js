@@ -8,9 +8,9 @@ import {Divider,Typography,ListItem,ListItemAvatar,Avatar } from '@mui/material'
 // atau langsung tambahkan dengan sx={{}}
 const Contact = ({ data }) => {
     // Contact berisi foto, nama, telepon, dan email
-    return (<div  style={{width:"35%"}}>
+    return (<div >
     
-    {data.map(data=>(<>
+    
       <ListItem>
       <ListItemAvatar>
         <Avatar src={data.photo}>
@@ -31,8 +31,8 @@ const Contact = ({ data }) => {
       
     </ListItem>
     <Divider variant="inset"  />
-    </>
-    ))}
+    
+    
       
       
      

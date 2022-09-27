@@ -35,9 +35,13 @@ const [contacts, setNewContact] = useState(contactsJSON
   return (
     <div className="App">
       <Header />
-        <div style={{display:"flex",gap:"20px", justifyContent:"space-evenly" }}>
+          <div style={{display:"flex",gap:"20px",     justifyContent:"space-evenly" }}>
           <ContactForm fnAddContact={addContacts}/>
-          <Contact data ={contacts}/>
+          <div style={{width:"35%",backgroundColor:"rgb(219,246,240)"}}>
+          {contacts.map((contact) => (
+            <Contact data={contact}/>
+          ))}
+          </div>
         </div>
      </div>
   );
