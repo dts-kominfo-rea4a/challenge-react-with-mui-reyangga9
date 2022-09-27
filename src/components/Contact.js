@@ -2,14 +2,14 @@
 // Contact component dapat berupa MUI ListItem
 // https://mui.com/material-ui/react-list/#folder-list
 import React from 'react';
-import {Card,Divider,Typography,ListItem,ListItemAvatar,Avatar } from '@mui/material';
+import {Divider,Typography,ListItem,ListItemAvatar,Avatar } from '@mui/material';
 
 // Kalian bisa membuat CSS sendiri di src/components/Contact.css
 // atau langsung tambahkan dengan sx={{}}
 const Contact = ({ data }) => {
     // Contact berisi foto, nama, telepon, dan email
     return (<div  style={{width:"35%"}}>
-    <Card>
+    
     {data.map(data=>(<>
       <ListItem>
       <ListItemAvatar>
@@ -35,7 +35,7 @@ const Contact = ({ data }) => {
     ))}
       
       
-      </ Card>
+     
     
     </div>);
 };
