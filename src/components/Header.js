@@ -2,12 +2,22 @@
 // atau langsung tambahkan dengan sx={{}}
 import React from 'react';
 
+import {Divider} from '@mui/material';
+
 // Header berisi judul dan subtitle
 // Judul: Call a Friend
 // Subtitle: Your friendly contact app
 const Header = () => {
   return (
-    <></>
+    <>
+    <h1 className='judul'>Call a Friend</h1>
+    <div>
+    <Divider>
+      <p>Your friendly contact app</p>
+    </Divider>
+    </div>
+    
+    </>
   );
 };
 
